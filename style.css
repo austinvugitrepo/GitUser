@@ -6,6 +6,19 @@ body {
 	background-color: gray;
 }
 
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-style: oblique;
+	font-family: Comic Sans MS, Comic Sans;
+}
+
 .flexbox-container {
         display: flex;
 	background-color: orange;
@@ -15,11 +28,15 @@ body {
 }
 
 .flexbox-item {
-	border: 10px solid black;
+	border: 5px solid gray;
 	background-color: orange;
 }
 
 .flexbox-item-1 {
-	width: 500px;
-	height: 500px;
+	width: 460px;
+	height: 460px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
