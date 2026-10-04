@@ -20,5 +20,36 @@ form.addEventListener("submit", function(event) {
 
 			return response.json();
 
+		})
+		
+		.then(function (user) {	
+			resultBox.textContent = "";
+
+			const avatar = document.createElement("img");
+			avatar.src = user.avatar_url;
+			avatar.alt = user.login + "'s GitHub profile picture";
+			avatar.width = 100;
+
+			const name = document.createElement("p");
+			name.textContent = "user.name || user.login;
+				
+			const bio = document.createElement("p");
+			bio.textContent = "user.bio || "";
+
+			const stats = document.createElement("p");
+			stats.textContent = user.followers + "followers, " + user.public_repos + "public repos";
+
+			resultBox.appendChild(avatar);
+			resultBox.appendChild(name);
+			resultBox.appendChild(bio);
+			resultBox.appendChild(stats);
+
+
+		})
+
+		.catch(function () {
+			resultBox.textContent = "User is not found";
+
 		});
-	
+
+});
