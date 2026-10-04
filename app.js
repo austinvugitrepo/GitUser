@@ -31,13 +31,13 @@ form.addEventListener("submit", function(event) {
 			avatar.width = 100;
 
 			const name = document.createElement("p");
-			name.textContent = "user.name || user.login;
+			name.textContent = user.name || user.login;
 				
 			const bio = document.createElement("p");
-			bio.textContent = "user.bio || "";
+			bio.textContent = user.bio || "";
 
 			const stats = document.createElement("p");
-			stats.textContent = user.followers + "followers, " + user.public_repos + "public repos";
+			stats.textContent = user.followers + " followers, " + user.public_repos + " public repos";
 
 			resultBox.appendChild(avatar);
 			resultBox.appendChild(name);
