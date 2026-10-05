@@ -7,16 +7,21 @@
 		- For testing my website I used nginx on my rhel 10 server to host my site, if you have a familiar setup:
 
 		```bash
+
 		 # nginx -v
+
 		 ```
 
 		```bash
+
 		 # vi /etc/nginx/nginx.conf
+
 		 ```
 
 		- add this server code block inside the default http block and comment out the other server blocks if you are not using them:
 
 		```bash
+
 		 server {
     			listen 80;
     			servername ;
@@ -25,18 +30,23 @@
     			}
 
 		  }
+
 		 ```
 
 		- move everything from this repo to /var/www:
 
 		```bash
+
 		 # mv app.js index.html style.css /var/www 
+
 		```
 
 		- start the nginx.service:
 		
 		```bash
+
 		 # systemctl enable --now nginx.service
+
 		 ```
 
 		- then go to the browser of your choice and at the search bar, go to http://(add-your-ip-of-your-server-here):80
@@ -45,8 +55,14 @@
 		- git clone this repo to your drive:
 		
 		```bash
-		 git clone https://github.com/austinvugitrepo/GitUser.git
+
+		 $ git clone https://github.com/austinvugitrepo/GitUser.git
+
 		```	
 		- go to your browser and at the search bar, go to file:///path/of/your/cloned/repo's/html/file
 		
+## Data Source:
+	This website uses the official GitHub Rest API https://api.github.com/
 
+## AI disclosure:
+	This project uses AI mainly with guidance and advice on how to build to this project. AI helped with finding bugs, and generating skeleton syntax for HTML, CSS, JavaScript as well. I used Claude Sonnet 5 to guide me in this project.
