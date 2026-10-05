@@ -17,6 +17,7 @@ h1 {
 	text-align: center;
 	font-style: oblique;
 	font-family: Comic Sans MS, Comic Sans;
+	letter-spacing: 0.5em;
 }
 
 .flexbox-container {
@@ -25,6 +26,7 @@ h1 {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+	padding-left: 200px;
 }
 
 .flexbox-item {
@@ -35,10 +37,6 @@ h1 {
 .flexbox-item-1 {
 	width: 460px;
 	height: 460px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
 }
 
 #result p {
@@ -53,5 +51,12 @@ h1 {
 
 footer {
 	color: orange;
+	font-family: Comic Sans MS, Comic Sans;
+	text-transform: uppercase;
+}
+
+.button {
+	background-color: gray;
+	color: white;
 	font-family: Comic Sans MS, Comic Sans;
 }
