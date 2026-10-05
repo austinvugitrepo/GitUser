@@ -28,8 +28,8 @@ h1 {
 }
 
 .flexbox-item {
-	border: 5px solid gray;
-	background-color: orange;
+	border: 5px dotted white;
+	background-color: gray;
 }
 
 .flexbox-item-1 {
@@ -39,4 +39,19 @@ h1 {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+#result p {
+	color: white;
+	font-family: Comic Sans MS, Comic Sans;
+}
+
+.form-group label {
+	text-decoration: underline;
+	font-family: Comic Sans MS, Comic Sans;
+}
+
+footer {
+	color: orange;
+	font-family: Comic Sans MS, Comic Sans;
 }
